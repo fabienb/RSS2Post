@@ -64,6 +64,7 @@ The plugin uses WordPress's built-in scheduling system (`wp_schedule_event`) to 
 
 ## Troubleshooting
 
+*   **Declaration error:**  If you concatenate your code or have multiple snippets, you may want to comment the first line `declare(strict_types=1);`because the Strict declaration should be on on the first line of PHP files otherwise it will trigger an error.
 *   **Check the WordPress debug log:**  Enable `WP_DEBUG` in your `wp-config.php` file to see detailed error messages.
 *   **Verify Feed URLs:** Ensure that the RSS feed URLs are correct and accessible.
 *   **Permissions:** Make sure the web server has permission to access external resources (RSS feeds).
