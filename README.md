@@ -1,6 +1,6 @@
 # RSS Feed to WP Post
 
-![Latest Version](https://img.shields.io/badge/release-v1.4-orange)
+![Latest Version](https://img.shields.io/badge/release-v1.4.1-orange)
 [![WordPress Version](https://img.shields.io/badge/wordpress-%3E%3D6.5-00749c)](https://wordpress.org/)
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D7.0-8892BF.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
@@ -60,7 +60,7 @@ The plugin is configured using constants defined within the `rss-to-post.php` fi
 
 ## Scheduling
 
-The plugin uses WordPress's built-in scheduling system (`wp_schedule_event`) to automatically fetch and import content. By default, it runs hourly.  You can adjust the schedule by modifying the arguments in the `wp_schedule_event` function within the plugin code (advanced users only).
+The plugin uses WordPress's built-in scheduling system (`wp_schedule_event`) to automatically fetch and import content. By default, it runs hourly.  You can adjust the schedule by modifying the arguments in the `wp_schedule_event` function within the plugin code _(advanced users only)_.
 
 ## Troubleshooting
 
@@ -73,7 +73,7 @@ The plugin uses WordPress's built-in scheduling system (`wp_schedule_event`) to 
 This is a light self-contained plugin presented as a snippet. I coded this to grab the content from my other feeds, but they are updated only a handful of times per week. 
 As such this plugin has its limitations and is not intended for labour-intensive tasks.
 
-*   **Performance:** Fetching and processing multiple RSS feeds can be resource-intensive. Consider adding caching mechanisms or optimizing your code if you're dealing with many feeds or large feeds. 
+*   **Performance:** Fetching and processing multiple RSS feeds can be resource-intensive. Consider adding caching mechanisms or optimising your code if you're dealing with many feeds or large feeds. 
 *   **Scheduling:** The `wp_schedule_event` is scheduled hourly, so it will iterate through all the feeds on each schedule run. If you have a very large number of feeds, this could become problematic. You might need to explore more advanced scheduling options (e.g., using a custom cron job) or stagger the feed imports. 
 
 ## Contributing
@@ -82,7 +82,7 @@ Contributions are welcome! Please fork this repository and submit a pull request
 
 ## License
 
-This plugin is licensed under the [GNU General Public License v2 or later](LICENSE).
+This plugin is licensed under the [GNU General Public License v3 or later](LICENSE).
 
 ## Support
 
